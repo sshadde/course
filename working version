@@ -87,8 +87,10 @@ int main() {
 
         std::cin >> guess;
 
-        if (guess == "0") return 0; // завершение программы при вводе "0"
-
+        if (guess == "0") { // завершение программы при вводе "0"
+            std::cout << "\nИгра завершена!" << std::endl;
+            return 0;
+        }
         if (guess == "ans") {
             std::cout << secretNumber << std::endl; // вывод секретного числа для разгадывания
             continue; // переход к следующей итерации цикла
